@@ -18,6 +18,11 @@ app.prepare()
 			app.render(req, res, actualPage, queryParams)
 		})
 
+		server.get('/categories', (req, res) => {
+			const actualPage = '/categories'
+			app.render(req, res, actualPage)
+		})
+
 		server.get('*', (req, res) => {
 			return handle(req, res)
 		})

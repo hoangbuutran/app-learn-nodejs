@@ -47,6 +47,21 @@ class Layout extends React.Component {
                 <a className="navbar-brand">Home</a>
               </Link>
             </NavItem>
+            <NavItem>
+              <Link href="/restaurants">
+                <a className="navbar-brand">Restaurant</a>
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link href="/categories">
+                <a className="navbar-brand">Category</a>
+              </Link>
+            </NavItem>
+            <NavItem>
+              <Link href="/products">
+                <a className="navbar-brand">Product</a>
+              </Link>
+            </NavItem>
             {isAuthenticated ? (
               <>
                 <NavItem className="ml-auto">
